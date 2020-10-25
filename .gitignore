@@ -1,5 +1,5 @@
 # Specify filepatterns you want git to ignore.
 .vs/
-._images/
+_images/
 *.code-workspace
 *.psd

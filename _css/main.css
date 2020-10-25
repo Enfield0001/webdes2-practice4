@@ -38,13 +38,25 @@ PRACTICE FORMATTING
 
     background-color: var(--brandingprimary);
 }
-.imgkit img {
+.imgkit * {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+ }
+.imgkit .fore {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--brandingprimary);
+    mix-blend-mode: overlay;
+    
 }
-.imgkit img.back {
+.imgkit .back {
+    position: relative;
+    top: -20rem;
     object-fit: cover;
+
+    filter: blur(3px) grayscale(100%);
 }
 
 
